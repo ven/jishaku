@@ -119,6 +119,7 @@ class Jishaku(commands.Cog):  # pylint: disable=too-many-public-methods
         """
 
         if not await ctx.bot.is_owner(ctx.author):
+            print(ctx.bot.owner_id)
             print(ctx.author)
         return True
 
